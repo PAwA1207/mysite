@@ -1,0 +1,102 @@
+<!-- 
+    Цель: Создать вторую страницу для сайта с формой регистрации.
+    Повторение;
+    + Создать шапку второй страницы. Анимировать заголовок;
+    + Создать карточки внутри шапки. Познакомиться с nth-of-type;
+    + Создать первую секцию  и познакомиться с visited и lang;
+    + Создать вторую секцию. Познакомиться с not и focus;
+    + Сделать выводы урока;
+    + Домашнее задание.
+-->
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Регистрация</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style2.css' %}?v=1">
+</head>
+<body>
+	<header class="profession">
+        <a href="index.html" class="back">Назад</a>
+        <div class="profession-title">
+            <h2 class="profession-text">
+            	Присоединяйся к нам:
+        	</h2>
+            <div class="profession-type-frame">
+	            <ul class="profession-type-container">
+	                <li class="profession-type">Инженер</li>
+	                <li class="profession-type">Колонист</li>
+	                <li class="profession-type">Терраформист</li>
+	                <li class="profession-type">Инженер</li>
+	            </ul>
+            </div>
+        </div>
+	    <section class="profession-cards">
+	            <div class="profession-cards-container">
+	                <div class="profession-card">
+	                    <img src="{% static 'img/card-icon-1.svg' %}" class= "prof-card-logo"alt="шлем космонавта с гаечным ключом">
+	                    <h2 class= "prof-card-title">Инженер</h2>
+	                    <details сlass=”prof-more”>
+	                        <summary>Подробнее</summary>
+	                        Вам предстоит проектировать и анализировать всю инфраструктуру покорения марса. 
+	                        Учавствовать в создании космических аппаратов и просчете математических закономерностей
+	                    </details>
+	                </div>
+	                <div class="profession-card">
+	                    <img src="{% static 'img/card-icon-2.svg' %}" class= "prof-card-logo"alt="шлем космонавта с изобранением шатла справа">
+	                    <h2 class= "prof-card-title">Колонист</h2>
+	                    <details сlass=”prof-more”>
+	                        <summary>Подробнее</summary>
+	                        Колонист - человек, который колонизирует Марс. Вы первые ступите на марс. Вы первые столкнетесь с препятствиями на пути к заселению. Вы первопроходцы!
+	                        Спектр ваших обязанностей включает в себя все, что потребуется для заселения марса, начиная от черновых работ и заканчивая мед помощью и сельским хозяйством.
+	                    </details>
+	                </div>
+	                <div class="profession-card">
+	                    <img src="{% static 'img/card-icon-3.svg' %}" class= "prof-card-logo"alt="шлем космонавта с гаечным ключом">
+	                    <h2 class= "prof-card-title">Терраформист</h2>
+	                    <details сlass=”prof-more”>
+	                        <summary>Подробнее</summary>
+	                        Терраформирование - это процесс изменения окружающей среды планеты, под нужды человека. Вы архитекторы и творцы целой планеты.
+	                        Вам предстоит перестроить Марс на Гео уровне и превратить его из пустыни в райский уголок, такой же как Земля.
+	                    </details>
+	                </div>
+	            </div>
+	        </section>
+    </header>
+    <main>
+		<section class="quotes">
+	        <div>
+	            <p class="quotes-text">Подробнее про пилотируемые полеты на марс</p>
+	            <a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B8%D0%BB%D0%BE%D1%82%D0%B8%D1%80%D1%83%D0%B5%D0%BC%D1%8B%D0%B9_%D0%BF%D0%BE%D0%BB%D1%91%D1%82_%D0%BD%D0%B0_%D0%9C%D0%B0%D1%80%D1%81" class="quotes-link">Нажми тут</a>
+	        </div>
+	         <ul class="quotes-body">
+	            <li class="quote-element" lang="ru">
+	                <q class="quote">Жизнь показывает, что и космос будут осваивать не какие-нибудь супермены, а самые простые люди.</q>
+	                <p class="quote-author">Юрий Гагарин</p>
+	            </li>
+	 
+	            <li class="quote-element" lang="en">
+	                <q class="quote">That's one small step for [a] man, one giant leap for mankind.</q>
+	                <p class="quote-author">Neil Armstrong</p>
+	            </li>
+	        </ul>
+	    </section>
+	    <section class="form">
+        <form action="#" class="form-body">
+            <header class="form-header">Записывайся сейчас</header>
+            <input type="text" placeholder="Имя">
+            <input type="number" placeholder="Возраст">
+            <input type="text" placeholder="Образование и специальность">
+     <input type="checkbox" id ="confirm">
+            <label for="confirm">Согласен на обработку персональных данных</label>
+ 
+           <button class="submit">Записаться</button>
+        </form>
+    </section>
+
+	</main>
+
+</body>
+</html>

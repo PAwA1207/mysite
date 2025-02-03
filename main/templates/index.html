@@ -1,0 +1,130 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}?v=1">
+	<title>Сайт о Марсе</title>
+</head>
+<body>
+	<nav class="side-nav">
+        <section class="nav-left">
+            <a href="#" class="logo">
+                <img src="{% static 'img/logo.svg' %}" alt="логотип">
+            </a>
+			<p class="nav-text">Навигация</p>
+        </section>
+        <section class="nav-right">
+            <div class="nav-items">
+                <a href="#" class="item">О Марсе</a>
+                <a href="#" class="item">Об изучении</a>
+                <a href="#" class="item">О спутниках</a>
+                <a href="#" class="item">О колонизации</a>
+                <a href="reg_page.html" class="item">Регистрация</a>
+            </div>
+        </section>
+    </nav>
+    <header class="header">
+        <section class="header-content">
+            <h1 class="header-title">Марс</h1>
+            <h2  class="header-sub_title">Мир красного песка</h2>
+            <button  class="header-btn">узнать больше</button>
+        </section>
+        <section class="header_bg">
+        	 <img src="{% static 'img/header-planet.svg' %}" class="header-planet">
+   	 <img src="{% static 'img/header-rocket.svg' %}" class="header-rocket">
+        </section>
+    </header>
+    <main>
+    	<section class="about">
+	        <section class="about-left">
+	 			<div class="about-alien">
+	                  <img src="{% static 'img/section-2-alien-eye.svg' %}" class="about-alien-eye">
+	            </div>
+	            <img src="{% static 'img/section-2-planets.svg' %}" class="about-planets">
+	        </section>
+	        <article class="about-right">
+	            <h2 class="about-title">О планете</h2>
+	            <p class="about-text">
+					Марс - это четвертая планета от Солнца. Его масса составляет 6,39E23 kg. Атмосферное давление на Марсе составляет 6.01 мбар, а уровень кислорода в ней достигает всего лишь 0,145%. Темпиратуры достигают от -153 до +35 градусов Цельсия. Один год на Марсе равен 687 дней
+	            </p>
+	        </article>
+    	</section>
+    	<section class="study">
+	        <section class="study-top">
+	            <article class="study-text">
+	                <h2 class="study-title">Как люди покоряют Марс</h2>
+	                <p class="study-desc">Человечество активно изучает эту планету. 
+	                    На данный момент NASA запустила уже 4 марсохода:
+	                </p>
+	                <ul class="study-rovers-list">
+	            		 <li class="study-rover-item">
+	                        <img src="{% static 'img/section-3-rover-1-ic.svg' %}" alt="иконка марсохода с 2мя колесами">
+	                        <p class="rover-item-title">Cоджорнер</p>
+	                    </li>
+	                    <li class="study-rover-item">
+	                        <img src="{% static 'img/section-3-rover-2-ic.svg' %}" alt="иконка марсохода с 3мя колесами">
+	                        <p class="rover-item-title">Оппортюнити</p>
+	                    </li>
+	                    <li class="study-rover-item">
+	                        <img src="{% static 'img/section-3-rover-3-ic.svg' %}" alt="иконка марсохода с 4мя колесами и антенной">
+	                        <p class="rover-item-title">Кьюриосити</p>
+	                    </li>
+	                    <li class="study-rover-item">
+	                        <img src="{% static 'img/section-3-rover-4-ic.svg' %}" alt="иконка марсохода с 4мя колесами, антенной и отсеком сзади">
+	                        <p class="rover-item-title">Персевиранс</p>
+	                    </li>
+
+	                </ul>
+	            </article>
+	        </section>
+	 
+	        <section class="study-bottom">
+	  	 <img src="{% static 'img/section-3-alien.svg' %}" class="study-alien">
+	            <img src="{% static 'img/section-3-rover.svg' %}" class="study-rover">
+	         
+	        </section>
+	    </section>
+	    <section class="satellites">
+	    	<h2 class="satellites-title">
+	    		А еще у Марса есть спутники
+	    	</h2>
+	    	<div class="satellites-box">
+	    		<div class="satellites-orbit">
+	    			<div class="satellites-img">
+	    				<div class="satellit-phobos">
+	    					<img src="{% static 'img/section-4-phobos.svg' %}" class="satellit-phobos-img">
+	    					<p class="satellit-text">Фобос</p>
+	    				</div>
+	    				<div class="satellit-deimos">
+	    					<img src="{% static 'img/section-4-deimos.svg' %}" class="satellit-deimos-img">
+	    					<p class="satellit-text">Деймос</p>
+	    				</div>
+	    			</div>
+	    			<img src="{% static 'img/section-4-mars.svg' %}" class="planet-mars">
+	    		</div>
+	    	</div>
+	    </section>
+	    <section class="earth">
+	    	<div class="earth__header">
+	    		
+	    	</div>
+	    	<div class="earth__content">
+	    		<p>
+	    			Возможно, однажды Марс станет второй планетой, приютившей человечество
+	    		</p>
+	    		<img src="{% static 'img/section-5-rocket.svg' %}" class="earth__rocket" alt="Картинка ракеты">
+	    	</div>
+	    	<div class="earth__footer">
+	    		<a href="reg_page" class="earth__button">Запишись в ряды колонистов и первооткрывателей</a>
+	    	</div>
+	    </section>
+    </main>
+    <footer>
+    	<p>
+    		Футер
+    	</p>
+    </footer>
+</body>
+</html>
